@@ -68,7 +68,6 @@ let findMovie = movie => {
 
     axios.get("https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy")
         .then(function (response) {
-            console.log(response.data);
             console.log(`
 ============================================
 Movie: ${response.data.Title}
